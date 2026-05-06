@@ -1,0 +1,95 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.meditrack:meditrack-backend >-------------------
+[INFO] Building meditrack-backend 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.3:run (default-cli) > test-compile @ meditrack-backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ meditrack-backend ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ meditrack-backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ meditrack-backend ---
+[INFO] skip non existing resourceDirectory E:\MediTrack\meditrack-backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ meditrack-backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 7 source files with javac [forked debug parameters release 17] to target\test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\AuthServiceTest.java:[5,30] error: cannot find symbol
+  symbol:   class DuplicateResourceException
+  location: package com.meditrack.exception
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\AuthServiceTest.java:[32,18] error: cannot find symbol
+  symbol:   class UHIDGeneratorService
+  location: class AuthServiceTest
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\AuthServiceTest.java:[37,12] error: cannot find symbol
+  symbol:   class RegisterRequest
+  location: class AuthServiceTest
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\DoctorServiceTest.java:[24,18] error: cannot find symbol
+  symbol:   class VisitHistoryRepository
+  location: class DoctorServiceTest
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\DoctorServiceTest.java:[27,18] error: cannot find symbol
+  symbol:   class OPDRecordRepository
+  location: class DoctorServiceTest
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\PatientServiceTest.java:[3,24] error: cannot find symbol
+  symbol:   class PatientDTO
+  location: package com.meditrack.dto
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\PatientServiceTest.java:[8,29] error: cannot find symbol
+  symbol:   class MeditrackUserDetails
+  location: package com.meditrack.security
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\PatientServiceTest.java:[29,18] error: cannot find symbol
+  symbol:   class VisitHistoryRepository
+  location: class PatientServiceTest
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\PatientServiceTest.java:[33,18] error: cannot find symbol
+  symbol:   class FileStorageService
+  location: class PatientServiceTest
+[INFO] 9 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.624 s
+[INFO] Finished at: 2026-04-04T13:46:40+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:testCompile (default-testCompile) on project meditrack-backend: Compilation failure: Compilation failure: 
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\AuthServiceTest.java:[5,30] error: cannot find symbol
+[ERROR]   symbol:   class DuplicateResourceException
+[ERROR]   location: package com.meditrack.exception
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\AuthServiceTest.java:[32,18] error: cannot find symbol
+[ERROR]   symbol:   class UHIDGeneratorService
+[ERROR]   location: class AuthServiceTest
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\AuthServiceTest.java:[37,12] error: cannot find symbol
+[ERROR]   symbol:   class RegisterRequest
+[ERROR]   location: class AuthServiceTest
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\DoctorServiceTest.java:[24,18] error: cannot find symbol
+[ERROR]   symbol:   class VisitHistoryRepository
+[ERROR]   location: class DoctorServiceTest
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\DoctorServiceTest.java:[27,18] error: cannot find symbol
+[ERROR]   symbol:   class OPDRecordRepository
+[ERROR]   location: class DoctorServiceTest
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\PatientServiceTest.java:[3,24] error: cannot find symbol
+[ERROR]   symbol:   class PatientDTO
+[ERROR]   location: package com.meditrack.dto
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\PatientServiceTest.java:[8,29] error: cannot find symbol
+[ERROR]   symbol:   class MeditrackUserDetails
+[ERROR]   location: package com.meditrack.security
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\PatientServiceTest.java:[29,18] error: cannot find symbol
+[ERROR]   symbol:   class VisitHistoryRepository
+[ERROR]   location: class PatientServiceTest
+[ERROR] E:\MediTrack\meditrack-backend\src\test\java\com\meditrack\service\PatientServiceTest.java:[33,18] error: cannot find symbol
+[ERROR]   symbol:   class FileStorageService
+[ERROR]   location: class PatientServiceTest
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
